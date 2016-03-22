@@ -28,7 +28,7 @@
 
     <link rel="shortcut icon" type="image/x-icon" href="https://digitalcraftsman.github.io/hugo-material-docs/images/favicon.ico">
     <link rel="icon" type="image/x-icon" href="https://digitalcraftsman.github.io/hugo-material-docs/images/favicon.ico">
-    
+
     <style>
       @font-face {
         font-family: 'Icon';
@@ -48,6 +48,7 @@
 
     <link rel="stylesheet" href="https://digitalcraftsman.github.io/hugo-material-docs/stylesheets/application.css">
     <link rel="stylesheet" href="https://digitalcraftsman.github.io/hugo-material-docs/stylesheets/palettes.css">
+    <link rel="stylesheet" href="https://digitalcraftsman.github.io/hugo-material-docs/stylesheets/highlight/highlight.css">
 
     
     
@@ -64,6 +65,11 @@
     
     
     <script src="https://digitalcraftsman.github.io/hugo-material-docs/javascripts/modernizr.js"></script>
+
+    
+    <link href="https://digitalcraftsman.github.io/hugo-material-docs/index.xml" rel="alternate" type="application/rss+xml" title="Material Docs" />
+    <link href="https://digitalcraftsman.github.io/hugo-material-docs/index.xml" rel="feed" type="application/rss+xml" title="Material Docs" />
+    
 
   </head>
   <body class="palette-primary-red palette-accent-light green">
@@ -133,7 +139,7 @@
         </div>
       
       <div class="name">
-        <strong>Material Docs 1.0.0</strong>
+        <strong>Material Docs <span class="version">1.0.0</span></strong>
         
           <br>
           digitalcraftsman/hugo-material-docs
@@ -388,9 +394,12 @@ it up and running.</p>
 </main>
 
     <script>
+    
       var base_url = 'https:\/\/digitalcraftsman.github.io\/hugo-material-docs\/';
       var repo_id  = 'digitalcraftsman\/hugo-material-docs';
+    
     </script>
+
     <script src="https://digitalcraftsman.github.io/hugo-material-docs/javascripts/application.js"></script>
     
 
@@ -431,5 +440,8 @@ it up and running.</p>
     </script>
 
     
+
+    <script src="//gohugo.io/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>

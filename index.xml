@@ -15,7 +15,7 @@
       <pubDate>Wed, 09 Mar 2016 20:10:46 +0100</pubDate>
       
       <guid>https://digitalcraftsman.github.io/hugo-material-docs/license/</guid>
-      <description>&lt;p&gt;Copyright &amp;copy; 2016 Digitalcraftsman &lt;br&gt;
+      <description>&lt;p&gt;Copyright &amp;copy; 2016 Digitalcraftsman &lt;a href=&#34;mailto:digitalcraftsman@protonmail.com&#34;&gt;digitalcraftsman@protonmail.com&lt;/a&gt;&lt;br&gt;
 Copyright &amp;copy; 2016 Martin Donath &lt;a href=&#34;mailto:martin.donath@squidfunk.com&#34;&gt;martin.donath@squidfunk.com&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -46,7 +46,7 @@ IN THE SOFTWARE.&lt;/p&gt;
       <guid>https://digitalcraftsman.github.io/hugo-material-docs/roadmap/</guid>
       <description>
 
-&lt;p&gt;Quo vadis? The port of the original &lt;a href=&#34;https://github.com/squidfunk/mkdocs-material&#34;&gt;Material theme&lt;/a&gt; has replicated nearly all of it&amp;rsquo;s features. A few are still missing but I&amp;rsquo;ve good news: the Hugo community is actively developing on a native integration. Maybe with the next release of Hugo we can abandon this list. Stay tuned.&lt;/p&gt;
+&lt;p&gt;Quo vadis? The port of the original &lt;a href=&#34;https://github.com/squidfunk/mkdocs-material&#34;&gt;Material theme&lt;/a&gt; has replicated nearly all of its features. A few are still missing but I&amp;rsquo;ve good news: the Hugo community is actively working on this issues. Maybe with the next release of Hugo we can abandon this list. Stay tuned.&lt;/p&gt;
 
 &lt;h2 id=&#34;localization&#34;&gt;Localization&lt;/h2&gt;
 
@@ -80,14 +80,14 @@ IN THE SOFTWARE.&lt;/p&gt;
 
 &lt;h2 id=&#34;hello-world&#34;&gt;Hello world&lt;/h2&gt;
 
-&lt;p&gt;Let&amp;rsquo;s create our first content file for your documentation. Open a terminal and add the following command for each new file you want to add. Replace &lt;code&gt;section-name&lt;/code&gt; with a general term that your document describes in detail.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s create our first content file for your documentation. Open a terminal and add the following command for each new file you want to add. Replace &lt;code&gt;&amp;lt;section-name&amp;gt;&lt;/code&gt; with a general term that describes your document in detail.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;hugo new &amp;lt;section-name&amp;gt;/filename.md
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Visitors of your website will find the final document under &lt;code&gt;www.example.com/section-name/filename/&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Visitors of your website will find the final document under &lt;code&gt;www.example.com/&amp;lt;section-name&amp;gt;/filename/&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;Since it&amp;rsquo;s possible to have multiple content files in the same section I recommend to create at least one &lt;code&gt;index.md&lt;/code&gt; file per section. This ensures that users will find an index page under &lt;code&gt;www.example.com/section-name&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Since it&amp;rsquo;s possible to have multiple content files in the same section I recommend to create at least one &lt;code&gt;index.md&lt;/code&gt; file per section. This ensures that users will find an index page under &lt;code&gt;www.example.com/&amp;lt;section-name&amp;gt;&lt;/code&gt;.&lt;/p&gt;
 
 &lt;h2 id=&#34;homepage&#34;&gt;Homepage&lt;/h2&gt;
 
@@ -238,13 +238,19 @@ Save your logo somewhere in the &lt;code&gt;static/&lt;/code&gt; folder and refe
   logo = &amp;quot;images/logo.png&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 
+&lt;h3 id=&#34;adding-a-custom-favicon&#34;&gt;Adding a custom favicon&lt;/h3&gt;
+
+&lt;p&gt;Favicons are small small icons that are displayed in the tabs right next to the title of the current page. As with the logo above you need to save your favicon in &lt;code&gt;static/&lt;/code&gt; and link it relative to this folder in the config file:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;[params]
+  favicon = &amp;quot;favicon.ico&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
 &lt;h3 id=&#34;google-analytics&#34;&gt;Google Analytics&lt;/h3&gt;
 
 &lt;p&gt;You can enable Google Analytics by replacing &lt;code&gt;UA-XXXXXXXX-X&lt;/code&gt; with your own tracking code.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;[params]
-  # Google Analytics
-  google_analytics = [&amp;quot;UA-XXXXXXXX-X&amp;quot;, &amp;quot;auto&amp;quot;]
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;googleAnalytics = &amp;quot;UA-XXXXXXXX-X&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id=&#34;small-tweaks&#34;&gt;Small tweaks&lt;/h3&gt;
@@ -295,6 +301,15 @@ green&lt;/em&gt;, &lt;em&gt;lime&lt;/em&gt;, &lt;em&gt;yellow&lt;/em&gt;, &lt;em
 
 &lt;p&gt;The text font will be loaded in font-weights 400 and &lt;strong&gt;700&lt;/strong&gt;, the monospaced
 font in regular weight.&lt;/p&gt;
+
+&lt;h3 id=&#34;syntax-highlighting&#34;&gt;Syntax highlighting&lt;/h3&gt;
+
+&lt;p&gt;This theme uses the popular &lt;a href=&#34;https://highlightjs.org/&#34;&gt;Highlight.js&lt;/a&gt; library to colorize code examples. The default theme is called &lt;code&gt;Github&lt;/code&gt; with a few small tweaks. You can link our own theme if you like. Again, store your stylesheet in the &lt;code&gt;static/&lt;/code&gt; folder and set the relative path in the config file:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;[params]
+  # Syntax highlighting theme
+  highlight_css  = &amp;quot;path/to/theme.css&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id=&#34;adding-a-github-and-twitter-account&#34;&gt;Adding a GitHub and Twitter account&lt;/h3&gt;
 

@@ -113,13 +113,19 @@ Save your logo somewhere in the &lt;code&gt;static/&lt;/code&gt; folder and refe
   logo = &amp;quot;images/logo.png&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 
+&lt;h3 id=&#34;adding-a-custom-favicon&#34;&gt;Adding a custom favicon&lt;/h3&gt;
+
+&lt;p&gt;Favicons are small small icons that are displayed in the tabs right next to the title of the current page. As with the logo above you need to save your favicon in &lt;code&gt;static/&lt;/code&gt; and link it relative to this folder in the config file:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;[params]
+  favicon = &amp;quot;favicon.ico&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
 &lt;h3 id=&#34;google-analytics&#34;&gt;Google Analytics&lt;/h3&gt;
 
 &lt;p&gt;You can enable Google Analytics by replacing &lt;code&gt;UA-XXXXXXXX-X&lt;/code&gt; with your own tracking code.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;[params]
-  # Google Analytics
-  google_analytics = [&amp;quot;UA-XXXXXXXX-X&amp;quot;, &amp;quot;auto&amp;quot;]
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;googleAnalytics = &amp;quot;UA-XXXXXXXX-X&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id=&#34;small-tweaks&#34;&gt;Small tweaks&lt;/h3&gt;
@@ -170,6 +176,15 @@ green&lt;/em&gt;, &lt;em&gt;lime&lt;/em&gt;, &lt;em&gt;yellow&lt;/em&gt;, &lt;em
 
 &lt;p&gt;The text font will be loaded in font-weights 400 and &lt;strong&gt;700&lt;/strong&gt;, the monospaced
 font in regular weight.&lt;/p&gt;
+
+&lt;h3 id=&#34;syntax-highlighting&#34;&gt;Syntax highlighting&lt;/h3&gt;
+
+&lt;p&gt;This theme uses the popular &lt;a href=&#34;https://highlightjs.org/&#34;&gt;Highlight.js&lt;/a&gt; library to colorize code examples. The default theme is called &lt;code&gt;Github&lt;/code&gt; with a few small tweaks. You can link our own theme if you like. Again, store your stylesheet in the &lt;code&gt;static/&lt;/code&gt; folder and set the relative path in the config file:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;[params]
+  # Syntax highlighting theme
+  highlight_css  = &amp;quot;path/to/theme.css&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id=&#34;adding-a-github-and-twitter-account&#34;&gt;Adding a GitHub and Twitter account&lt;/h3&gt;
 

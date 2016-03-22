@@ -19,14 +19,14 @@
 
 &lt;h2 id=&#34;hello-world&#34;&gt;Hello world&lt;/h2&gt;
 
-&lt;p&gt;Let&amp;rsquo;s create our first content file for your documentation. Open a terminal and add the following command for each new file you want to add. Replace &lt;code&gt;section-name&lt;/code&gt; with a general term that your document describes in detail.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s create our first content file for your documentation. Open a terminal and add the following command for each new file you want to add. Replace &lt;code&gt;&amp;lt;section-name&amp;gt;&lt;/code&gt; with a general term that describes your document in detail.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;hugo new &amp;lt;section-name&amp;gt;/filename.md
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Visitors of your website will find the final document under &lt;code&gt;www.example.com/section-name/filename/&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Visitors of your website will find the final document under &lt;code&gt;www.example.com/&amp;lt;section-name&amp;gt;/filename/&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;Since it&amp;rsquo;s possible to have multiple content files in the same section I recommend to create at least one &lt;code&gt;index.md&lt;/code&gt; file per section. This ensures that users will find an index page under &lt;code&gt;www.example.com/section-name&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Since it&amp;rsquo;s possible to have multiple content files in the same section I recommend to create at least one &lt;code&gt;index.md&lt;/code&gt; file per section. This ensures that users will find an index page under &lt;code&gt;www.example.com/&amp;lt;section-name&amp;gt;&lt;/code&gt;.&lt;/p&gt;
 
 &lt;h2 id=&#34;homepage&#34;&gt;Homepage&lt;/h2&gt;
 
