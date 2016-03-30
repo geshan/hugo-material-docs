@@ -133,7 +133,7 @@ Save your logo somewhere in the &lt;code&gt;static/&lt;/code&gt; folder and refe
 &lt;p&gt;This theme provides a simple way for making small adjustments, that is changing
 some margins, centering text, etc. Simply put the CSS and Javascript files that
 contain your adjustments in the &lt;code&gt;static/&lt;/code&gt; directory (ideally in subdirectories of their own) and include them via the &lt;code&gt;custom_css&lt;/code&gt; and &lt;code&gt;custom_js&lt;/code&gt;
-variables in your &lt;code&gt;config.toml&lt;/code&gt;. Reference the files with relative to &lt;code&gt;static/&lt;/code&gt;:&lt;/p&gt;
+variables in your &lt;code&gt;config.toml&lt;/code&gt;. Reference the files relative to &lt;code&gt;static/&lt;/code&gt;:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;[params]
   # Custom assets
@@ -189,8 +189,8 @@ font in regular weight.&lt;/p&gt;
 &lt;h3 id=&#34;adding-a-github-and-twitter-account&#34;&gt;Adding a GitHub and Twitter account&lt;/h3&gt;
 
 &lt;p&gt;If you have a GitHub and/or Twitter account, you can add links to your
-accounts to the drawer by setting the variables &lt;code&gt;author.github&lt;/code&gt; and
-&lt;code&gt;author.twitter&lt;/code&gt; respectively:&lt;/p&gt;
+accounts to the drawer by setting the variables &lt;code&gt;github&lt;/code&gt; and
+&lt;code&gt;twitter&lt;/code&gt; respectively:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;[social]
   twitter = &amp;quot;&amp;quot;
