@@ -161,11 +161,11 @@ Nothing to see here, move along.
 &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;# create a new Hugo website
 hugo new site my-awesome-docs
 
-# move into the root folder of your website
-cd my-awesome-docs
+# move into the themes folder of your website
+cd my-awesome-docs/themes/
 
 # download the theme
-git clone git@github.com:digitalcraftsman/hugo-material-docs.git themes
+git clone git@github.com:digitalcraftsman/hugo-material-docs.git
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id=&#34;setup&#34;&gt;Setup&lt;/h2&gt;
