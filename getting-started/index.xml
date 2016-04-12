@@ -205,9 +205,10 @@ accounts to the drawer by setting the variables &lt;code&gt;github&lt;/code&gt; 
   name   = &amp;quot;Material&amp;quot;
   url    = &amp;quot;/&amp;quot;
   weight = 0
+  pre    = &amp;quot;&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;code&gt;name&lt;/code&gt; is the title displayed in the menu and &lt;code&gt;url&lt;/code&gt; the relative URL to the content. The &lt;code&gt;weight&lt;/code&gt; attribute allows you to modify the order of the menu entries. A menu entry appears further down the more weight you add.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;name&lt;/code&gt; is the title displayed in the menu and &lt;code&gt;url&lt;/code&gt; the relative URL to the content. The &lt;code&gt;weight&lt;/code&gt; attribute allows you to modify the order of the menu entries. A menu entry appears further down the more weight you add. The &lt;code&gt;pre&lt;/code&gt; attribute is optional and allows you to *pre*pend elements to a menu link, e.g. an icon.&lt;/p&gt;
 
 &lt;p&gt;Instead of just linking a single file you can enhance the sidebar by creating a nested menu. This way you can list all pages of a section instead of linking them one by one (without nesting).&lt;/p&gt;
 
